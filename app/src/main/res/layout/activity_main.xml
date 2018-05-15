@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="@dimen/textview_16_padding"
+                android:text="@string/player_red"
+                android:textColor="@color/colorPlayerName"
+                android:textSize="@dimen/playerNameTextSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/player_red_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/textview_24_padding"
+                    android:text="@string/zero_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/scoreTextSize" />
+
+                <TextView
+                    android:id="@+id/player_red_adv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="@dimen/textview_24_padding"
+                    android:text="@string/zero_text"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/advTextSize" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginLeft="@dimen/activity_padding"
+                android:layout_marginRight="@dimen/activity_padding"
+                android:onClick="addFourForRed"
+                android:text="@string/add_4_points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginLeft="@dimen/activity_padding"
+                android:layout_marginRight="@dimen/activity_padding"
+                android:onClick="addThreeForRed"
+                android:text="@string/add_3_points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginLeft="@dimen/activity_padding"
+                android:layout_marginRight="@dimen/activity_padding"
+                android:onClick="addTwoForRed"
+                android:text="@string/add_2_points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginLeft="@dimen/activity_padding"
+                android:layout_marginRight="@dimen/activity_padding"
+                android:onClick="advantageForRed"
+                android:text="@string/add_Advantage" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_padding"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="@dimen/textview_16_padding"
+                android:text="@string/player_green"
+                android:textColor="@color/colorPlayerName"
+                android:textSize="@dimen/playerNameTextSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/player_green_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/textview_24_padding"
+                    android:text="@string/zero_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/scoreTextSize" />
+
+                <TextView
+                    android:id="@+id/player_green_adv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="@dimen/textview_24_padding"
+                    android:text="@string/zero_text"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/advTextSize" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginLeft="@dimen/activity_padding"
+                android:layout_marginRight="@dimen/activity_padding"
+                android:onClick="addFourForGreen"
+                android:text="@string/add_4_points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginLeft="@dimen/activity_padding"
+                android:layout_marginRight="@dimen/activity_padding"
+                android:onClick="addThreeForGreen"
+                android:text="@string/add_3_points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginLeft="@dimen/activity_padding"
+                android:layout_marginRight="@dimen/activity_padding"
+                android:onClick="addTwoForGreen"
+                android:text="@string/add_2_points" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginLeft="@dimen/activity_padding"
+                android:layout_marginRight="@dimen/activity_padding"
+                android:onClick="advantageForGreen"
+                android:text="@string/add_Advantage" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/big_padding"
+        android:onClick="resetScore"
+        android:text="@string/reset" />
+
+
+</RelativeLayout>
